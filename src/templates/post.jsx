@@ -2,8 +2,8 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
-import { Layout, Container, Content } from 'layouts';
-import { TagsBlock, Header, SEO } from 'components';
+import { Layout, Container, Content } from '../layouts/';
+import { TagsBlock, Header, SEO } from '../components/';
 import '../styles/prism';
 
 const SuggestionBar = styled.div`

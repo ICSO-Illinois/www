@@ -3,8 +3,8 @@ import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { Layout, Container } from 'layouts';
-import { Header } from 'components';
+import { Layout, Container } from '../layouts/';
+import { Header } from '../components/';
 import config from '../../config/site';
 
 const StyledLink = styled(Link)`
