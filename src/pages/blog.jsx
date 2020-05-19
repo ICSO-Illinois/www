@@ -2,15 +2,15 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
-import { Header, BlogList } from 'components';
-import { Layout } from 'layouts';
+import { Header, BlogList } from '../components/';
+import { Layout } from '../layouts/';
 
 const Blog = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
-      <Helmet title={'Blog Page'} />
-      <Header title="Blog Page">Gatsby Tutorial Starter</Header>
+      <Helmet title={'文章列表'} />
+      <Header title="文章列表">一切皆以服务华人为本</Header>
       {edges.map(({ node }) => (
         <BlogList
           key={node.id}

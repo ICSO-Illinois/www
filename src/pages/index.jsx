@@ -3,8 +3,8 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import styled from '@emotion/styled';
-import { Header, PostList } from 'components';
-import { Layout } from 'layouts';
+import { Header, PostList } from '../components/';
+import { Layout } from '../layouts/';
 
 const PostWrapper = styled.div`
   display: flex;
@@ -24,8 +24,8 @@ const Index = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
-      <Helmet title={'Home Page'} />
-      <Header title="Home Page">Gatsby Tutorial Starter</Header>
+      <Helmet title={'CU-ICSO'} />
+      <Header title="CU-ICSO">欢迎来到CU-ICSO的主站</Header>
       <PostWrapper>
         {edges.map(({ node }) => {
           const { id, excerpt, frontmatter } = node;
