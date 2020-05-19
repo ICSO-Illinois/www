@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
 const Wrapper = styled.section`
-  text-align: ${props => (props.center ? 'center' : '')};
+  text-align: ${props => (props.center ? 'justify' : '')};
   margin: auto;
   padding: 3rem 1.5rem;
   width: 60%;
