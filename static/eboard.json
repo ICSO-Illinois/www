@@ -1,0 +1,83 @@
+{
+  "board":
+  [
+    {
+      "title": "主席 主席 President",
+      "name": "孙山"
+    },
+    {
+      "title": "副主席 Vice President",
+      "name": "简亦泓"
+    },
+    {
+      "department": "事务部 Administration",
+      "members": [
+        {
+          "title": "部长",
+          "name": "胡宏杰"
+        },
+        {
+          "title": "胡宏杰",
+          "name": "罗育华"
+        }
+      ]
+    },
+    {
+      "department": "活动部 Project Management",
+      "members": [
+        {
+          "title": "部长",
+          "name": "叶雨桐"
+        }
+      ]
+    },
+    {
+      "department": "人事部 Human Resource",
+      "members": [
+        {
+          "title": "部长",
+          "name": "刘斯昂"
+        }
+      ]
+    },
+    {
+      "department": "技术部 Research Development",
+      "members": [
+        {
+          "title": "部长",
+          "name": "张晨晖"
+        },
+        {
+          "title": "副部长",
+          "name": "蒋雨成"
+        }
+      ]
+    },
+    {
+      "department": "外联部 Business Development",
+      "members": [
+        {
+          "title": "部长",
+          "name": "徐昊洋"
+        }
+      ]
+    },
+    {
+      "department": "宣传部 Public Relation",
+      "members": [
+        {
+          "title": "部长",
+          "name": "钟弘毅"
+        },
+        {
+          "title": "副部长",
+          "name": "刘羽丰"
+        },
+        {
+          "title": "副部长",
+          "name": "倪涵"
+        }
+      ]
+    }
+  ]
+}
