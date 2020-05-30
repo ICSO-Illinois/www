@@ -64,3 +64,6 @@ yarn-error.log
 
 # IntelliJ Configuration
 .idea/
+
+# macOS file
+.DS_Store
