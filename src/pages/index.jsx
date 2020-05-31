@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import styled from '@emotion/styled';
 import { Header, PostList } from '../components/';
 import { Layout } from '../layouts/';
+import logo from '../../static/logo/header-logo.svg'
 
 const PostWrapper = styled.div`
   display: flex;
@@ -25,7 +26,7 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <Helmet title={'CU-ICSO'} />
-      <Header title="CU-ICSO">欢迎来到CU-ICSO的主站</Header>
+      <Header title={'CU-ICSO'}>欢迎来到CU-ICSO的主站</Header>
       <PostWrapper>
         {edges.map(({ node }) => {
           const { id, excerpt, frontmatter } = node;
