@@ -19,7 +19,7 @@ const Blog = ({ data }) => {
           title={node.frontmatter.title}
           date={node.frontmatter.date}
           tags={node.frontmatter.tags}
-          excerpt={node.excerpt}
+          excerpt={node.frontmatter.excerpt}
         />
       ))}
     </Layout>
@@ -61,6 +61,7 @@ export const query = graphql`
             path
             tags
             date(formatString: "MM.DD.YYYY")
+            excerpt
             cover {
               childImageSharp {
                 fluid(

@@ -54,6 +54,12 @@ const Layout = ({ children }) => (
             font-family: ${theme.fontFamily.heading};
           }
 
+          #gatsby-focus-wrapper {
+            min-height: 100vh;
+            position: relative;
+            padding-bottom: 5em;
+          }
+
           ${headroom}
         `}
       />

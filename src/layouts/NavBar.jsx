@@ -30,7 +30,7 @@ const Nav = styled.nav`
 const NavBar = () => (
   <Headroom calcHeightOnResize disableInlineStyles>
     <StyledLink to="/">
-      <img src={logo} alt="ICSO Logo" />
+      <img src={logo} alt="ICSO Logo" style={{ marginBottom : 0 + 'rem' }}/>
     </StyledLink>
     <Nav>
       <Link to="/">主页</Link>

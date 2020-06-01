@@ -1,33 +1,58 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import badgeOrange from '../../static/logo/Illinois-Wordmark-Horizontal-Reversed-Orange-RGB.png';
 
 const Wrapper = styled.footer`
-  position: relative;
-  padding-top: 2rem;
+  position: absolute;
   bottom: 0;
+  width: 100%;
+  height: 5rem;
+  /* padding: 2rem 0; */
   box-shadow: ${props => props.theme.shadow.footer};
   background: ${props => props.theme.gradient.leftToRight};
   font-family: ${props => props.theme.fontFamily.body};
   font-weight: 500;
-  @media (max-width: ${props => props.theme.breakpoints.s}) {
-    padding-top: 7rem;
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+const Elem = styled.div`
+  flex-grow: 1;
+  width: 33%;
+  height: 100%;
+  align-content: center;
+  @media (max-width: ${props => props.theme.breakpoints.m}) {
+    width: 100%;
+    background: ${props => props.theme.gradient.leftToRight};
   }
+  align-content: center;
 `;
 
 const Text = styled.div`
-  margin: 0;
-  padding-bottom: 2rem;
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: auto;
   text-align: center;
   color: ${props => props.theme.colors.white.light};
 `;
 
+const Badge = styled.img`
+  display: block;
+  height: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5em;
+  margin-bottom: auto;
+  @media (max-width: ${props => props.theme.breakpoints.m}) {
+    width: 200px;
+  }
+`;
+
 const Footer = () => (
   <Wrapper>
-    <Text>
-      <span>
-        Proudly Powered by - <a href="https://www.gatsbyjs.org/">Gatsby</a>
-      </span>
-    </Text>
+    <Elem><Text>Brought to you by CU-ICSO</Text></Elem>
+    <Elem><a href="https://illinois.edu/"><Badge src={badgeOrange}/></a></Elem>
+    <Elem><Text><a href="http://www.chineseunion.org/" style={{color: "#E84A27"}}>Chinese Union</a></Text></Elem>
   </Wrapper>
 );
 export default Footer;
