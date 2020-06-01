@@ -36,7 +36,7 @@ const NavBar = () => (
       <Link to="/">主页</Link>
       <Link to="/blog">内容</Link>
       <Link to="/about">关于</Link>
-      <a href={"https://maps.danielz.ch/"}>地图</a>
+      <Link to={"/map"}>地图</Link>
     </Nav>
   </Headroom>
 );
