@@ -1,0 +1,975 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#13294b",
+        "fill-opacity": 0.65,
+        "id": 0,
+        "name": "Iken North",
+        "type": "Region",
+        "marker-size": "",
+        "marker-color": "#000000",
+        "popupContent": "美国传统宿舍，这里属于Iken的北区.住在IKEN的学生可以乘坐1路, 10路，4路，22路到达校园各地。距离Main Quad 5分钟车程"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.23853969573975,
+              40.10400806525872
+            ],
+            [
+              -88.23853433132172,
+              40.10229704419184
+            ],
+            [
+              -88.23727905750275,
+              40.102309353849606
+            ],
+            [
+              -88.23729515075682,
+              40.10253503051373
+            ],
+            [
+              -88.2335239648819,
+              40.102567856147964
+            ],
+            [
+              -88.23354542255402,
+              40.10403268395285
+            ],
+            [
+              -88.23853969573975,
+              40.10400806525872
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#e84a27",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Nugent Hall",
+        "url": "https://housing.illinois.edu/Living-Options/Residence-Halls/Undergraduate-Halls/Nugent",
+        "type": "URH",
+        "id": 1,
+        "popupContent": "一般面向于高年级本科学生，只对有残疾或者是运动员身份的低年级本科学生开放，大一新生申请基本没有希望"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.2372522354126,
+          40.10361006180087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#e84a27",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Weston Hall",
+        "url": "https://housing.illinois.edu/Living-Options/Residence-Halls/Undergraduate-Halls/Weston",
+        "type": "URH",
+        "id": 2,
+        "popupContent": "整座楼都是Exploration Living-learning Community(Exploration LLC)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.23559999465942,
+          40.103019207012714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#e84a27",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Wassaja Hall",
+        "popupContent": "暂无介绍",
+        "url": "https://housing.illinois.edu/Living-Options/Residence-Halls/Undergraduate-Halls/Wassaja",
+        "type": "URH",
+        "id": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.23823392391205,
+          40.10352799894271
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#e84a27",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Hopkins Hall",
+        "url": "https://housing.illinois.edu/Living-Options/Residence-Halls/Undergraduate-Halls/Hopkins",
+        "type": "URH",
+        "id": 4,
+        "popupContent": "类似于Weston，该宿舍楼内有LEADS Living-Learning Community (LEADS LLC)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.23748290538788,
+          40.10256375294455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#e84a27",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Ludgren Hall",
+        "url": "https://housing.illinois.edu/Living-Options/Residence-Halls/Undergraduate-Halls/Barton-Lundgren",
+        "type": "URH",
+        "id": 5,
+        "popupContent": "男生宿舍，该宿舍楼内没有电梯，也没有空调，但是价格相较其他宿舍都更便宜"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.23402285575867,
+          40.10396293096303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#e84a27",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Barton Hall",
+        "url": "https://housing.illinois.edu/Living-Options/Residence-Halls/Undergraduate-Halls/Barton-Lundgren",
+        "type": "URH",
+        "id": 6,
+        "popupContent": "女生宿舍，和Ludgren 一样，也没有空调和电梯"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.23401749134064,
+          40.10329001609428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "name": "Iken South",
+        "type": "Region",
+        "popupContent": "IKEN South的宿舍全部为男女混住宿舍。",
+        "id": 7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.23850214481352,
+              40.10152563452954
+            ],
+            [
+              -88.2335078716278,
+              40.10155025412196
+            ],
+            [
+              -88.23351860046387,
+              40.10254323692377
+            ],
+            [
+              -88.23723614215851,
+              40.10250220486364
+            ],
+            [
+              -88.23724687099457,
+              40.102301147411346
+            ],
+            [
+              -88.23852896690369,
+              40.10227652809064
+            ],
+            [
+              -88.23850214481352,
+              40.10152563452954
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Snyder Hall",
+        "url": "https://housing.illinois.edu/Living-Options/Residence-Halls/Undergraduate-Halls/Snyder",
+        "type": "URH",
+        "id": 8,
+        "popupContent": "Snyder Hall是IKEN South的前台所在地。Snyder Hall 是Substance-free Community，即每一个选择住进Snyder Hall的学生必须保持良好的习惯，不可以在楼内吸烟，喝酒，以及吸食各类麻醉品。另外Snyder也是IKEN假期唯一保持开放的宿舍。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.23483288288116,
+          40.102243702315825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Scott Hall",
+        "url": "https://housing.illinois.edu/Living-Options/Residence-Halls/Undergraduate-Halls/Scott",
+        "type": "URH",
+        "id": 9,
+        "popupContent": "Scott的宿舍布局和Snyder，Weston，Hopkins的布局很像，其3，4层预留给转学生。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.23639929294586,
+          40.10207957320425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Bousfield Hall",
+        "url": "https://housing.illinois.edu/Living-Options/Residence-Halls/Undergraduate-Halls/Bousfield",
+        "type": "URH",
+        "popupContent": "Bousfield是IKEN唯一有套间的宿舍，不对大一新生开放。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.2379549741745,
+          40.101804656055336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Taft Van-Doren",
+        "url": "https://housing.illinois.edu/Living-Options/Residence-Halls/Undergraduate-Halls/Taft-Van-Doren",
+        "type": "URH",
+        "popupContent": "Taft和Van Doren基本以大一新生为主，宿舍没有空调和电梯，相应的价格也较为便宜。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.23368489742279,
+          40.101948269629936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "SDRP",
+        "type": "general",
+        "popupContent": "旁边有目前全学校最大的食堂SDRP(Student Dining and Rsidential Programs), 该食堂伙食被在校学生评为最好吃的几个食堂之一，以种类众多而著名。其洗衣房为公共洗衣房，有免费的洗衣机和烘干机。",
+        "url": "https://housing.illinois.edu/AboutUs/sdrp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.23549807071686,
+          40.103692124560055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "name": "FAR",
+        "url": "https://housing.illinois.edu/Living-Options/Residence-Halls/Undergraduate-Halls/Florida-Avenue",
+        "type": "Region",
+        "popupContent": "Florida Avenue Residence 简称为FAR由Trelease和Oglesby两栋楼组成，对面是PAR 坐落于校内的South Quad。 宿舍设施比较新，一楼有食堂，地下室有舞蹈教室，钢琴室，洗衣房，图书馆和健身房。宿舍楼分为男女层，公共卫生间。FAR的食堂虽小但伙食很好，每周三晚是Pizza Night 可以自己选酱料和topping。门口有车站，可以乘坐12路，13路，22路，到校园各地，距离Main quad 车程10分钟。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.2219797372818,
+              40.09923597349436
+            ],
+            [
+              -88.2219636440277,
+              40.098345528950055
+            ],
+            [
+              -88.21996808052063,
+              40.09838656351697
+            ],
+            [
+              -88.22002708911896,
+              40.09925649051243
+            ],
+            [
+              -88.2219797372818,
+              40.09923597349436
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "name": "PAR",
+        "url": "https://housing.illinois.edu/Living-Options/Residence-Halls/Undergraduate-Halls/Pennsylvania-Avenue",
+        "type": "Region",
+        "popupContent": " Pennsylvania Avenue Residence Halls 简称为par。 由4栋4层多元化但联系紧密的社区组成（Babcock, Carr, Blaisdell, Saunders）。对面为Far (Florida Avenue Residence Hall). Par 拥有更新的设施如电脑机房，活动室及一所开到0点的商店。 入大厅楼梯下去便是全校最好的食堂，包早餐中餐下午茶晚餐夜宵，也是全校唯一有夜宵的社区。 宿舍分男女，房型为双人间加房外独立卫生间。每一层有8间独立卫生间供学生使用。 每一层附带一间公共休息室带沙发和电视。洗衣房位于每栋负一楼（B），需刷学生卡才可进，尽可能保证学生私人物品的安全。 地理位置靠偏，但交通极其发达，校园内重要交通路线 12， 13， 22号的起始站便坐落于PAR门口，可前往校园各地， 距离Main quad车程仅十分钟。 Par还提供春假寒假秋假住宿，不需要再次搬家，并且如果是LLC(Living-Learning Communities)的一员，春假住宿费全免。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.22135210037231,
+              40.10052032689672
+            ],
+            [
+              -88.22133600711823,
+              40.099515004409895
+            ],
+            [
+              -88.21929216384888,
+              40.099515004409895
+            ],
+            [
+              -88.21932435035706,
+              40.10053263687591
+            ],
+            [
+              -88.22135210037231,
+              40.10052032689672
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Arc",
+        "type": "Recreation",
+        "popupContent": "IKEN宿舍区的南方为学校最大的体育馆ARC(Activities and Recreation Center)，内设室内标准泳池，室内篮球馆，羽毛球馆，排球馆，壁球馆，健身房，搏击室，桑拿房，攀岩墙，厨艺教室等。",
+        "url": "https://campusrec.illinois.edu/facilities/activities-and-recreation-center-arc/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.23603987693787,
+          40.10086910877858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Hendrick House",
+        "url": "https://www.hendrickhouse.com/",
+        "type": "PCH",
+        "popupContent": "本人是 2019-2020 学年在 Hendrick House 居住 下面我从居住感受，公寓管理和食宿来说一些 Hendrick House 的总体情况 首先是居住感受，我租的是一个 west single. 因为我当时租房时间比较晚正常的 west single 都已经租完了所以我的 single 是一个 double room 但是只有我一个人使用，屋子里面是有两张床；不可以把多余的床拿出去。总体来说居住感受还是不错的，房间里面有一个很大的窗户，桌子也很大，足够放一个很大的显示屏和打印机以及很多日常多需要的东西。抽屉柜子也足够使用。所有的房型都需要跟对面屋子的租户一起共用一个厕所；如果是单人间的话是两个人使用，要是双人间的话就是 四个人共用。West 的电梯一共有两个，但是有一个是一直坏掉的，整个学年基本上都没有修好过。Hendrick 的后面是一个停车场，一般情况车位是足够的，但是停车场是露天的，利弊大家自己权衡一下。洗衣服的话是在地下一层整个楼的人一起使用，一共是 4 个洗衣机和 4 个烘干机。一般情况下总是有空闲的，除了周日晚上。 最后就是 Hendrick house 在绿街的尽头，理工院是比较近的，但是离别的学院稍微有点远。 其次我来说一下公寓的管理， 公寓的负责人还是很 nice 的，一般情况下也比较好说话。 取快递也很方便一般前台可以很快的帮你找到快递，没有出现过快递丢失的情况。 整个学年有几次大检查（具体几次记不太清楚了）就有人会进到你屋子里面把不符合规定的东西拿走；一般情况下是大功率电器还有一些有防火隐患的东西。还有就是平时是不是会有人进你的屋子里面检查你的东西，有不符合规定的会直接拿走（酒精之类的东西）。 Hendrick house 不太适合开 party，因为如果有人举报的话会罚款，抽烟之类的也是不允许的。 每周会有一次保洁，包括清理厕所和吸地毯，收垃圾是一周两次。 我选房的时候 Hendrick 是宣传他的食堂是大一宿舍里面最好的，其实也就还好，正常的美国食物和墨西哥食物，时不时有一次美式中餐。我刚开学的时候去吃过几次，后来都是在外面吃的。 Hendrick 食堂的亮点是他有一个烤架，你可以 order 像鸡胸肉，cheese Burger 之类的东西，再有就是周一到周五有夜宵，一直供应到晚上 11 点。 总的来说这一年的体验还是不错的， Hendrick House 是一个很安静的地方，不是很 social，很多工院的学生住在这里。如果你需要一个很安静的学习环境，那我会很推荐 Hendrick House。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.21990370750427,
+          40.11089274622618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Grainger Library",
+        "type": "Library",
+        "popupContent": "工学院图书馆",
+        "url": "https://www.library.illinois.edu/enx/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.2268238067627,
+          40.11248867825661
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Siebel",
+        "type": "Department",
+        "popupContent": "计算机系",
+        "url": "https://cs.illinois.edu/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.22488188743591,
+          40.11384662692126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Presby Hall",
+        "url": "https://presbyhall.com/",
+        "type": "PCH",
+        "popupContent": "Presby是个人认为地理位置比较好的一个宿舍：靠着绿街，步行两分钟就可以到，到sibel大概步行15分钟，数学楼步行5分钟内，Quad步行7、8分钟，arc亲测15min步行可到。如果有自行车会更快。综上，presby到各个需要频繁到达到地点距离都比较近。 Presby住宿条件很好，主要是两个双人间搭配一个单人间。有厨房和客厅，客厅有电视，我的suite的单人间的印度人经常和他朋友一起打FIFA。厨房有微波炉冰箱什么的，反正能满足想自己做饭的同学的要求。我的suite其中一个双人间配一个卫生间，我在的双人间和单人间共用一个卫生间。房间面积据我所知算pch和urh中算大的了。 需要提一下的是presby的住宿费用比其他宿舍相较要高一些。 Presby的致命弱点是食堂，比较差，但也不是不可忍受，偶尔也有很好吃的，但总体不好吃，对比较挑剔的同学不友好。周末的话周六中午开始没有餐食提供。建议买10餐meal plan（meal plan应该是强制的，而且不能去其他地方用）。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.23266565799713,
+          40.1085049322325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Illini Tower",
+        "url": "https://www.mystudentvillage.com/us/illini-tower/",
+        "type": "PCH",
+        "popupContent": "个人觉得it算得上是地理位置排名前三的宿舍了，尤其是对于商院的朋友们简直不要太友好。 一般大一来说都在main quad上课， 而从IT走到quad的每一个教学楼基本都在七分钟左右，所以非常友好！如果要去商院的话，穿过Armory building的话五分钟就到了。走到绿街也基本在十分钟之内。 IT我觉得整体条件算的上是最好的了。首先it分为单人间，双人间，三人间和四人间。每一个套房里面都有厨房，厕所和客厅。而且房间与房间之间的隔音比较好，但是上下层隔音不太好。IT有单独的M层供同学们打印和使用电脑，而且也有台球桌和微波炉。住宿体验非常好，除了床有点小。双人间和单人间还会有电视。每一层楼都有休息室，有电视和学习桌，但是并不建议在这里学习，因为会很吵。 It最差的一点就是食堂了。其实食堂并没有很差，有冰激凌机，饮料机，还有黑人叔叔的煎蛋卷和炒牛肉。刚开始吃体验会很不错，但是长期吃会很腻，所以才会有it食堂很烂的印象。 IT的价格也没有特别贵，跟URH比起来也是差不多的，如果是住四人间的话。 总之体验是非常不错的，只要找好室友，住宿体验会非常好！谨慎选择室友！！！而且平常上课的话是很少会回宿舍的，基本都在图书馆或者别的地方，所以单单是住宿体验的话，IT绝佳。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.2323384284973,
+          40.106646317964724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "ISR",
+        "url": "https://housing.illinois.edu/Living-Options/Residence-Halls/Undergraduate-Halls/Illinois-Street",
+        "type": "URH",
+        "popupContent": "ISR有两幢楼，Townsend和Wardall。ISR的食堂还在装修，预计八月底会营业。还有一些其他的就餐选择比如Union，PAR，FAR，Iken等。ISR位于学校的东侧，距离工院和物理系较近，内部布置为传统宿舍，两人间和三人间。和其他很多URH的宿舍一样，ISR会在一些假期时关闭。宿舍大部分为美国本地学生。所以如果想多认识些美国同学，是一个不错的选择。从宿舍到quad步行只需要7分钟的时间，如果住的足够高，房间里视野非常棒，可以俯瞰整个校园。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.22139501571655,
+          40.11008861204346
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Armory House",
+        "url": "https://www.armoryhouse.com/",
+        "type": "PCH",
+        "popupContent": "Hello大家好，我是UIUC大三商院的学生，这是我在Armory House住的第三年，同时我也是armory的RA(resident advisor)， 很高兴可以为新生和家长介绍Armory。 Armory分为Suite building和Main building，两栋楼都有单人间和双人间提供。 我大一住在Main deluxe double，大二之后搬到Suite Single，个人感觉uite体验更好因为房间使用面积更大。 Main房间里有床，学习桌，衣柜，很大的窗户，以及全身镜。Suite除了这些，房间里还有一个洗手池，在房间里洗脸卸妆都很方便。Armory所有双人间都是和另一个双人间（也就是4个人）共用洗手间，洗手间里有两个洗手池和两个镜子，人多但用起来很方便；所有单人间都是2个房间（2人）共用洗手间，也就是说两个房间是可以从洗手间内相通的。用洗手间的时候可以把室友的门反锁，如果用完忘记开了室友也可以从自己的房间把锁打开的。Armory有清洁service，清洁工每周会来打扫洗手间。  很多人选宿舍时候最关心的是食堂，Armory的食堂其实很Chinese-friendly，这个是我很喜欢的一点，经常会有饺子炒面米饭。如果对食堂有任何意见，可以写下放在意见箱里。曾经我很不满意食堂只有素馅饺子，有一次在意见箱里提了一下，下周就见到肉馅饺子了。食堂是自助形式，不限量，水平忽高忽低，有时候会很好吃，有时很一般，但是每顿饭都有special meal可以在cook station点。Special meal包括炒面、蛋炒饭、汉堡薯条鸡蛋卷等等可以选择，有时会有意大利面。 Meal plan可以选择每学期200次，250次或300次。推荐选择200次, 因为根本吃不完哦。 像我每学期会刷150次meal plan已经算很多了，周围朋友很多只刷70次。因为食堂吃到后面都会腻，大家周末通常都会选择点外卖或者去绿街吃饭店。此外，Armory 的meal plan和另外两个pch Newman以及Hendrick house是可以通用的，我和朋友有时候吃腻了armory经常会去newman吃饭。 Armory main有4个洗衣机，suite有3个，都可以免费使用，对比很多university housing洗衣机需要投币才能用，这一点要好很多，比如很多时候我衣服喜欢分颜色洗，就会觉得免费的洗衣机很方便。Main有1个公共厨房，suite有2个公共厨房，都有冰箱，平时点的外卖可以放在冰箱里，上面写上自己名字和房间号就可以。如果嫌麻烦可以在亚马逊上买个小冰箱放在自己房间里。宿舍里电热水壶和冰箱这些电器都是允许放的。Armory有地下停车场，车位的数量一般都是足够的。  Armory的office对中国学生极其友善，4个Resident Advisor里有2个中国RA，RA学长学姐可以在学习生活上为新生提供帮助。Armory经常会举办很多节日活动, 比如春节联欢会大家一起教美国同学包饺子、写汉字，万圣节cosplay等等， 都很有意思。  关于Armory的一个小缺点，可能是它在兄弟会附近晚上会被party吵到，但是个人感觉没有那么夸张啦，至少我在宿舍学习的时候从来没有因为这个被打扰过。还有就是suite楼的构造，房间外面就是公共活动区域，有人会觉得比较吵，但是宿舍每天11点后quiet hours就不允许有人待在那里了，所以晚上不会影响休息。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.23673188686371,
+          40.10589957563639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Newman Hall",
+        "url": "http://www.sjcnc.org/housing/",
+        "type": "PCH",
+        "popupContent": "Newman就还挺好的，非常典型的美式宿舍，基本没有什么中国人，地理位置极佳，步行心理楼一分钟，Lincoln Hall两分钟，伙食在PCH里算是最好的。是个天主教宿舍，所以大家都特别友善。宿舍背面有个教堂，可以定时免费去听弥撒。全公寓有一个给学生使用的公共厨房，房间里是没有厨房的。分为南北楼两块区域，北楼要新一些，更现代一些，有套间，南楼只有双人间和三人间。宿舍地下室有24小时开放的健身房和练歌房，总体来说就挺好的，价格大概在12000-14000左右。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.22984397411346,
+          40.10635090439723
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "UGL",
+        "type": "Library",
+        "popupContent": "本科生图书馆，在地下",
+        "url": "https://www.library.illinois.edu/ugl/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.22718858718872,
+          40.104722003771215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "CRCE",
+        "type": "Recreation",
+        "popupContent": "全校第二大的健身中心，有25米泳池和小温泉",
+        "url": "https://campusrec.illinois.edu/facilities/campus-recreation-center-east-crce/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.22179734706879,
+          40.104845095860945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Allen Hall",
+        "url": "https://housing.illinois.edu/Living-Options/Residence-Halls/Undergraduate-Halls/Allen",
+        "type": "URH",
+        "popupContent": "地理位置：Allen Hall的位置相对来说还算可以，旁边就是CRCE(Campus Recreational Center East)。本人由于是农院的学生我步行4分钟就能到达教学楼，去quad的话15分钟，BIF 12分钟亲测不过本人走路较快。CRCE的话平常一至六晚上会比较多人，下午比较空，另外星期天基本没人。 直观感受：从外观来看，Allen总共四层，看起来有点像监狱的样子，但是里面来说其实还是干净整洁的，除了basement会有时候比较臭，本人住在basement所以经常会闻到，不过习惯了其实还好。另外除了basement是男生only，其余楼层都是男女混住。住Allen最大的一个优/劣势就是LGBTQ，所以包容性在Allen是很强调的一点。 配置：说到Allen最需要吐槽的一点就是没有空调，8月份会极其的热。不过由于香槟通常比较凉爽，所以有了风扇就不是什么大问题。而且由于只有一辆电梯，所以电梯要等很久，住三楼四楼的话通常都要爬楼梯。另外，由于是公共卫生间所以要shared space。另外，basement有洗衣房和食堂，琴房和studio room（音乐专业可以做beat。）洗衣机的话比较容易坏，不过维修人员维护工作做得还不错，洗衣服建议星期二三。 伙食：食堂的饭菜通常星期天比较好，其余时间一般般，不过由于Allen旁边有Bab plus（韩国店），Marie Ann（美国快餐）和其他。所以问题不是很大。走路过去3分钟就可以到，不过如果要去绿街需要20分钟。 活动： Allen每个星期都会举行活动，有卡拉ok，才艺表演和画画，所以认识新朋友的话会比较容易，另外由于Allen中国人不算多，所以中国人彼此都会认识，就比较容易玩在一起。  适合人群：农院/音乐major/商院/具有极其包含性人群和健身爱好者 总体来说：Allen地理位置7/10 伙食 6/10 外观 4/10 配置 5/10 认识朋友 9/10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.22053670883179,
+          40.104127055531094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "LAR",
+        "type": "URH",
+        "popupContent": "与Allen Hall相连但比Allen Hall大，学习室很方便，在LLC可以免费租自行车",
+        "url": "https://housing.illinois.edu/Living-Options/Residence-Halls/Undergraduate-Halls/Lincoln-Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.2200539112091,
+          40.10412295242174
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Main Quad",
+        "type": "General",
+        "popupContent": "学校的大草坪，人流量非常密集，闲暇时间很多同学会在这里玩或者休息",
+        "url": "https://illinois.edu/about/quadcam.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.22717785835266,
+          40.1075284480658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Alma Mater",
+        "type": "General",
+        "popupContent": "学校的地标之一，不同时期会穿上不同的服装",
+        "url": "https://illinois.edu/about/almacam.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.22840094566345,
+          40.1098670632002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "name": "Gies College of Business",
+        "popupContent": "商学院教学楼",
+        "type": "Region",
+        "url": "https://giesbusiness.illinois.edu/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.2315444946289,
+              40.10409833376028
+            ],
+            [
+              -88.23153913021088,
+              40.103142302183414
+            ],
+            [
+              -88.23036432266234,
+              40.10314640535192
+            ],
+            [
+              -88.23039650917053,
+              40.10411064309212
+            ],
+            [
+              -88.2315444946289,
+              40.10409833376028
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "name": "FAA",
+        "popupContent": "美院所在地",
+        "type": "Region",
+        "url": "https://faa.illinois.edu/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.22959184646606,
+              40.10355261781056
+            ],
+            [
+              -88.22959184646606,
+              40.103199746520204
+            ],
+            [
+              -88.22859942913055,
+              40.10318333385747
+            ],
+            [
+              -88.2286262512207,
+              40.10352799894271
+            ],
+            [
+              -88.22959184646606,
+              40.10355261781056
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "name": "College of ACES",
+        "type": "Region",
+        "popupContent": "农院大本营，只是大致位置，实际上农院还有更多地盘",
+        "url": "https://aces.illinois.edu/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.2256919145584,
+              40.10338438870276
+            ],
+            [
+              -88.22564899921417,
+              40.102608888168504
+            ],
+            [
+              -88.22639465332031,
+              40.10261709456964
+            ],
+            [
+              -88.22668969631195,
+              40.10249810165628
+            ],
+            [
+              -88.22666823863983,
+              40.10142715607078
+            ],
+            [
+              -88.2266628742218,
+              40.100639323269114
+            ],
+            [
+              -88.22188317775725,
+              40.10070907966654
+            ],
+            [
+              -88.22192072868347,
+              40.10341311077499
+            ],
+            [
+              -88.2256919145584,
+              40.10338438870276
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "name": "Grainger College of Engineering",
+        "type": "Region",
+        "popupContent": "工学院大部分建筑的所在地",
+        "url": "https://grainger.illinois.edu/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.22890520095825,
+              40.116316300912594
+            ],
+            [
+              -88.2287871837616,
+              40.110384009378606
+            ],
+            [
+              -88.2283365726471,
+              40.110384009378606
+            ],
+            [
+              -88.22773575782776,
+              40.11049888577357
+            ],
+            [
+              -88.2273280620575,
+              40.11057273478217
+            ],
+            [
+              -88.22262883186339,
+              40.11061376197452
+            ],
+            [
+              -88.22267174720764,
+              40.1122302136568
+            ],
+            [
+              -88.22068691253662,
+              40.112279445084894
+            ],
+            [
+              -88.22068691253662,
+              40.112689705599614
+            ],
+            [
+              -88.22390556335449,
+              40.11268150041355
+            ],
+            [
+              -88.22395920753478,
+              40.116308096164104
+            ],
+            [
+              -88.22890520095825,
+              40.116316300912594
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "name": "Green Street",
+        "type": "Line",
+        "popupContent": "绿街，学校中心位置一条非常繁华的街道，有各种公寓、餐饮店、超市、酒吧等场所",
+        "url": "https://storied.illinois.edu/greenstreet/"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -88.24216604232788,
+            40.11019528345137
+          ],
+          [
+            -88.22886228561401,
+            40.110310160165106
+          ],
+          [
+            -88.22742462158202,
+            40.11035939298299
+          ],
+          [
+            -88.22646975517273,
+            40.11048247487187
+          ],
+          [
+            -88.22210311889648,
+            40.11053170756506
+          ],
+          [
+            -88.21941018104553,
+            40.1105809402226
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Walgreens",
+        "type": "General",
+        "popupContent": "校园内的一家连锁超市，虽然规模较小但是日用品齐全"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.23272466659546,
+          40.11000245424573
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "County Market",
+        "type": "General",
+        "popupContent": "校外的一个较大的市场",
+        "url": "https://www.mycountymarket.com/shop/store-locator/champaign-stoughton/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.2339745759964,
+          40.11314098930738
+        ]
+      }
+    }
+  ]
+}

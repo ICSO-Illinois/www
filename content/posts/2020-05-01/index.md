@@ -5,6 +5,7 @@ date: "2020-05-01"
 title: "宿舍指南合集"
 published: true
 tags: ['宿舍', '校园生活', '指南']
+excerpt: 宿舍信息简介
 ---
 
 UIUC宿舍分为两大体系，分别是URH (University Residence Hall) 和 PCH (Private Certified Housing)。
