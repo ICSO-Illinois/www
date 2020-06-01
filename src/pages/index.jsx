@@ -8,6 +8,7 @@ import { Layout } from '../layouts/';
 import logo from '../../static/logo/header-logo.svg'
 
 const PostWrapper = styled.div`
+  min-height: 50vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -29,8 +30,8 @@ const Index = ({ data }) => {
       <Header title={'CU-ICSO'}>欢迎来到CU-ICSO的主站</Header>
       <PostWrapper>
         {edges.map(({ node }) => {
-          const { id, excerpt, frontmatter } = node;
-          const { cover, path, title, date } = frontmatter;
+          const { id, frontmatter } = node;
+          const { cover, path, title, date, excerpt} = frontmatter;
           return (
             <PostList
               key={id}
@@ -85,6 +86,7 @@ export const query = graphql`
             path
             tags
             date(formatString: "MM.DD.YYYY")
+            excerpt
             cover {
               childImageSharp {
                 fluid(

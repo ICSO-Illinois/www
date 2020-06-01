@@ -11,7 +11,7 @@ module.exports = {
   // JSONLD / Manifest
   favicon: 'static/logo/favicon.png', // Used for manifest favicon generation
   shortName: 'CU-ICSO', // shortname for manifest. MUST be shorter than 12 characters
-  author: 'Chenhui', // Author for schemaORGJSONLD
+  author: 'CU-ICSO Dev Team', // Author for schemaORGJSONLD
   themeColor: '#1F4096',
   backgroundColor: '#d3e0ff',
   twitter: '@DoesNotExistBot', // Twitter Username

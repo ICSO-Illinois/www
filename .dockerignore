@@ -53,3 +53,6 @@ public
 
 # IntelliJ Configuration
 .idea/
+
+# macOS file
+.DS_Store
