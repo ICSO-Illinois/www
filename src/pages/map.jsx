@@ -29,7 +29,7 @@ const MapWrapper = styled.div`
 
 const Map = () => (
   <Layout>
-    <Helmet title={'ICSO 校园地图'} />
+    <Helmet title={'ICSO 校园地图'}>看看校园里的地点吧！</Helmet>
     <Header title={'校园地图'} />
     <MapWrapper>
       <CampusMap lat={40.1091771} lng={-88.2270936}  zoom={50} />
