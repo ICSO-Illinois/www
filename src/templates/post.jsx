@@ -21,7 +21,7 @@ const PostSuggestion = styled.div`
 
 const Post = ({ data, pageContext }) => {
   const { next, prev } = pageContext;
-  const { html, frontmatter, excerpt } = data.markdownRemark;
+  const { tableOfContents, html, frontmatter, excerpt } = data.markdownRemark;
   const { date, title, tags, path, description } = frontmatter;
   const image = frontmatter.cover.childImageSharp.fluid;
 
@@ -36,6 +36,9 @@ const Post = ({ data, pageContext }) => {
       />
       <Header title={title} date={date} cover={image} />
       <Container>
+        <h1>目录</h1>
+        <Content input={tableOfContents} />
+        <h1>正文</h1>
         <Content input={html} />
         <TagsBlock list={tags || []} />
       </Container>
@@ -75,6 +78,10 @@ export const query = graphql`
   query($pathSlug: String!) {
     markdownRemark(frontmatter: { path: { eq: $pathSlug } }) {
       html
+      tableOfContents(
+        maxDepth: 3
+        pathToSlugField: "frontmatter.path"
+      )
       frontmatter {
         date
         title

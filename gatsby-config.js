@@ -32,6 +32,10 @@ module.exports = {
               maxWidth: 750,
               quality: 90,
               linkImagesToOriginal: true,
+              tableOfContents: {
+                heading: null,
+                maxDepth: 6,
+              },
             },
           },
           'gatsby-remark-prismjs',
