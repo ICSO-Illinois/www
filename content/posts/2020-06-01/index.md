@@ -5,6 +5,7 @@ date: "2020-06-01"
 title: "新生Info Session+答疑资料汇总"
 published: true
 tags: ['学院指南', '校园生活', '课程', '专业']
+excerpt: 新生答疑会信息汇总
 ---
 ### 学校综述
 -	视频回放：
@@ -25,7 +26,7 @@ tags: ['学院指南', '校园生活', '课程', '专业']
 
 - 经济系
 	- 院系网址：[Department of Economics](https://economics.illinois.edu/)
-	- Info Session 文档：[点击此处下载](../../info-session/las/Grainger.pdf)
+	- Info Session 文档：[点击此处下载](../../info-session/las/Econ.pdf)
 
 - 数学系
 	- 院系网址：[Department of Mathematics](https://math.illinois.edu/)
