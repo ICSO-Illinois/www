@@ -5,7 +5,6 @@ import Helmet from 'react-helmet';
 import styled from '@emotion/styled';
 import { Header, PostList } from '../components/';
 import { Layout } from '../layouts/';
-import logo from '../../static/logo/header-logo.svg'
 
 const PostWrapper = styled.div`
   min-height: 50vh;
@@ -31,8 +30,9 @@ const Index = ({ data }) => {
       <PostWrapper>
         {edges.map(({ node }) => {
           const { id, frontmatter } = node;
-          const { cover, path, title, date, excerpt} = frontmatter;
-          return (
+          const { published, cover, path, title, date, excerpt} = frontmatter;
+          console.log(published);
+          return published ?
             <PostList
               key={id}
               cover={cover.childImageSharp.fluid}
@@ -40,8 +40,7 @@ const Index = ({ data }) => {
               title={title}
               date={date}
               excerpt={excerpt}
-            />
-          );
+            /> : null;
         })}
       </PostWrapper>
     </Layout>
@@ -82,6 +81,7 @@ export const query = graphql`
           id
           excerpt(pruneLength: 75)
           frontmatter {
+            published
             title
             path
             tags
