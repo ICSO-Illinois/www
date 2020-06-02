@@ -29,6 +29,7 @@ const headroom = css`
   }
   .headroom--scrolled {
     transition: ${theme.transitions.headroom.transition};
+    border-radius: 0 0 10px 10px;
   }
   .headroom--unpinned {
     position: fixed;
@@ -41,6 +42,7 @@ const headroom = css`
     transition: ${theme.transitions.headroom.transition};
     background-color: ${theme.colors.white.light};
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 10px 10px;
     nav {
       a {
         color: ${theme.colors.black.base};
