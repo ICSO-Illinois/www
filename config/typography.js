@@ -1,7 +1,7 @@
 import Typography from 'typography';
 
 export const typography = new Typography({
-  title: 'GatsbyTutorial',
+  title: 'CU-ICSO-Fonts',
   baseFontSize: '18px',
   baseLineHeight: 1.45,
   headerFontFamily: [
@@ -13,6 +13,7 @@ export const typography = new Typography({
     'Helvetica',
     'Arial',
     'sans-serif',
+    'source-sans-pro'
   ],
   bodyFontFamily: [
     'Open Sans',
