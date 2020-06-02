@@ -29,12 +29,13 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <Helmet title={'CU-ICSO'} />
-      <Header title="CU-ICSO">欢迎来到CU-ICSO的主站</Header>
+      <Header title={'CU-ICSO'}>欢迎来到CU-ICSO的主站</Header>
       <PostWrapper>
         {edges.map(({ node }) => {
           const { id, frontmatter } = node;
-          const { cover, path, title, date, excerpt} = frontmatter;
-          return (
+          const { published, cover, path, title, date, excerpt} = frontmatter;
+          console.log(published);
+          return published ?
             <PostList
               key={id}
               cover={cover.childImageSharp.fluid}
@@ -42,8 +43,7 @@ const Index = ({ data }) => {
               title={title}
               date={date}
               excerpt={excerpt}
-            />
-          );
+            /> : null;
         })}
       </PostWrapper>
     </Layout>
@@ -84,6 +84,7 @@ export const query = graphql`
           id
           excerpt(pruneLength: 75)
           frontmatter {
+            published
             title
             path
             tags

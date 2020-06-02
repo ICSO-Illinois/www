@@ -166,7 +166,7 @@ const NavBar = () => {
                 <Link to="/" style={show}>主页</Link>
                 <Link to="/blog" style={show}>内容</Link>
                 <Link to="/about" style={show}>关于</Link>
-                <a href={"https://maps.danielz.ch/"} style={show}>地图</a>
+                <Link to={"/map"}>地图</Link>
               </DdContent>
             </Dropdown>
           </StyledLink>
@@ -186,7 +186,7 @@ const NavBar = () => {
           <Link to="/">主页</Link>
           <Link to="/blog">内容</Link>
           <Link to="/about">关于</Link>
-          <a href={"https://maps.danielz.ch/"}>地图</a>
+          <Link to={"/map"}>地图</Link>
         </Menu>
       </Nav>
     </Headroom>
