@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 import Headroom from 'react-headroom';
+import window from 'global';
 import logo from '../../static/logo/header-logo.svg';
 
 const StyledLink = styled(Link)`
