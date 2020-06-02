@@ -11,6 +11,7 @@ const StyledLink = styled(Link)`
   font-weight: 700;
   align-items: center;
   position: relative;
+  z-index: 1;
 `;
 
 const Nav = styled.nav`
@@ -36,7 +37,7 @@ const Nav = styled.nav`
 
 const Logo = styled.img`
   height: 4rem;
-  margin-top: 0rem;
+  margin-top: -0.5rem;
   margin-bottom: -1rem;
   max-width: 420px;
   margin-left: -1.5rem;
@@ -49,7 +50,7 @@ const Logo = styled.img`
 
 const Menu = styled.div`
   position: relative;
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
   margin-bottom: auto;
   @media (max-width: ${props => props.theme.breakpoints.s}) {
     display: none;
@@ -73,12 +74,12 @@ const Dropdown = styled.div`
 
 const DropdownB = styled.button`
   position: absolute;
+  right: -90vw;
+  top: -4rem;
   margin-top: -0.5rem;
   margin-bottom: auto;
   margin-right: 3vw;
-  right: -50vw;
   width: 36px;
-  /* height: 26px; */
   visibility: hidden;
   @media (max-width: ${props => props.theme.breakpoints.s}) {
     visibility: visible;
@@ -92,19 +93,20 @@ const DropdownB = styled.button`
 const DdContent = styled.div`
   display: none;
   position: absolute;
-  right: -50vw;
+  right: -90vw;
   margin-right: 3vw;
-  top: -9px;
+  top: -4rem;
+  transform: translateY(-9px);
+  padding-top: 30px;
+  padding-right: 4px;
   background-color: #f1f1f1;
   width: 20vw;
   min-width: 90px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   text-align: right;
-  padding-right: 4px;
   line-height: 2rem;
   border-radius: 3px;
-  /* border: 1px solid black; */
 `;
 
 const show = {
@@ -149,30 +151,25 @@ const NavBar = () => {
     };
     return(
       <Headroom calcHeightOnResize disableInlineStyles>
-        <Nav style={{flex: 99}}>
+        <Nav>
           <StyledLink to="/" style={{maxWidth: "33%"}}>
             <Logo src={logo} alt="ICSO Logo"/>
-            <Dropdown>
-              <DropdownB onClick={handleClick}>
-                <span class="menu-icon" style={{ width: "36px" }}>
-                  <svg viewBox="0 0 18 15" width="18px" style={{ height: "auto"}} >
-                    <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-                  </svg>
-                </span>
-              </DropdownB>
-              <DdContent id="dropNav" display="none">
-                <span class="menu-icon" style={{ width: "36px", marginRight: "5px", position: "relative", top: "-3px"}}>
-                  <svg viewBox="0 0 18 15" width="18px" style={{ height: "auto"}} >
-                    <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-                  </svg>
-                </span>
-                <Link to="/" style={show}>主页</Link>
-                <Link to="/blog" style={show}>内容</Link>
-                <Link to="/about" style={show}>关于</Link>
-                <Link to={"/map"} style={show}>地图</Link>
-              </DdContent>
-            </Dropdown>
           </StyledLink>
+          <Dropdown>
+            <DropdownB onClick={handleClick}>
+              <span class="menu-icon" style={{ width: "36px" }}>
+                <svg viewBox="0 0 18 15" width="18px" style={{ height: "auto"}} >
+                  <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+                </svg>
+              </span>
+            </DropdownB>
+            <DdContent id="dropNav" display="none">
+              <Link to="/" style={show}>主页</Link>
+              <Link to="/blog" style={show}>内容</Link>
+              <Link to="/about" style={show}>关于</Link>
+              <Link to={"/map"} style={show}>地图</Link>
+            </DdContent>
+          </Dropdown>
         </Nav>
       </Headroom>
     )
