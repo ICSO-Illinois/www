@@ -8,6 +8,7 @@ import { SEO } from '../components/';
 import { NavBar, Footer } from '../layouts/';
 import theme from '../../config/theme';
 import headroom from '../styles/headroom';
+import background from '../../static/logo/background.svg'
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
@@ -31,9 +32,14 @@ const Layout = ({ children }) => (
           html,
           body {
             width: 100%;
-            height: 100%;
+            /* height: 100%; */
             margin: 0;
             padding: 0;
+            background-image: url("${background}");
+            background-repeat: no-repeat;
+            background-size: auto 40vh;
+            background-position: bottom 30vh right -14vh;
+            background-attachment: fixed;
           }
 
           body {
