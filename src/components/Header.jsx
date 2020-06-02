@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 const Wrapper = styled.header`
   background: ${props => props.theme.gradient.rightToLeft};
   box-shadow: ${props => props.theme.shadow.header};
+  border-radius: 0 0 10px 10px;
   height: 30vh;
   max-height: 300px;
   @media (max-width: ${props => props.theme.breakpoints.m}) {

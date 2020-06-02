@@ -14,6 +14,7 @@ const Wrapper = styled.footer`
   font-weight: 500;
   display: flex;
   flex-wrap: wrap;
+  border-radius: 10px 10px 0 0;
 `;
 
 const Elem = styled.div`

@@ -166,7 +166,7 @@ const NavBar = () => {
                 <Link to="/" style={show}>主页</Link>
                 <Link to="/blog" style={show}>内容</Link>
                 <Link to="/about" style={show}>关于</Link>
-                <Link to={"/map"}>地图</Link>
+                <Link to={"/map"} style={show}>地图</Link>
               </DdContent>
             </Dropdown>
           </StyledLink>

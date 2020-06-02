@@ -7,6 +7,7 @@ const headroom = css`
     width: 100%;
     z-index: 2000;
     top: 0;
+    border-radius: 0 0 10px 10px;
   }
   .headroom {
     display: flex;
