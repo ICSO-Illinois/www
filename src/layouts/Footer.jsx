@@ -15,6 +15,9 @@ const Wrapper = styled.footer`
   display: flex;
   flex-wrap: wrap;
   border-radius: 10px 10px 0 0;
+  @media (max-width: ${props => props.theme.breakpoints.m}) {
+    height: 15em;
+  }
 `;
 
 const Elem = styled.div`
@@ -24,7 +27,7 @@ const Elem = styled.div`
   align-content: center;
   @media (max-width: ${props => props.theme.breakpoints.m}) {
     width: 100%;
-    background: ${props => props.theme.gradient.leftToRight};
+    height: 33%;
   }
   align-content: center;
 `;

@@ -2,6 +2,8 @@ import React from 'react';
 import styled from '@emotion/styled';
 import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
+import window from 'global';
+import { useWindowDimensions } from '../layouts/NavBar.jsx';
 
 const Wrapper = styled.header`
   background: ${props => props.theme.gradient.rightToLeft};
@@ -64,16 +66,27 @@ const BgStyle = {
   height: "100%"
 }
 
-const Header = ({ children, title, date, cover }) => (
-  <Wrapper>
-    <Img fluid={cover || {} || [] || ''} style={BgStyle}/>
-    <Text>
-      <h1>{title}</h1>
-      <h3>{date}</h3>
-      {children && <Subtitle>{children}</Subtitle>}
-    </Text>
-  </Wrapper>
-);
+const Header = ({ children, title, date, cover }) => {
+  const { height, width } = useWindowDimensions();
+  if ((height < 600) && (width > height)) {
+    // don' return display title if the vertial space is too small
+    return (
+      <Wrapper style={{height: "5rem"}}>
+        <Img fluid={cover || {} || [] || ''} style={BgStyle}/>
+      </Wrapper>
+    )
+  }
+  return (
+    <Wrapper>
+      <Img fluid={cover || {} || [] || ''} style={BgStyle}/>
+      <Text>
+        <h1>{title}</h1>
+        <h3>{date}</h3>
+        {children && <Subtitle>{children}</Subtitle>}
+      </Text>
+    </Wrapper>
+  )
+};
 
 export default Header;
 
