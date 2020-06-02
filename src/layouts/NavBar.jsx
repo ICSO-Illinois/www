@@ -37,7 +37,6 @@ const Nav = styled.nav`
 
 const Logo = styled.img`
   height: 4rem;
-  margin-top: -0.5rem;
   margin-bottom: -1rem;
   max-width: 420px;
   margin-left: -1.5rem;
@@ -99,20 +98,25 @@ const DdContent = styled.div`
   transform: translateY(-9px);
   padding-top: 30px;
   padding-right: 4px;
+  padding-left: 4px;
   background-color: #f1f1f1;
   width: 20vw;
   min-width: 90px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  text-align: right;
+  text-align: center;
   line-height: 2rem;
   border-radius: 3px;
 `;
 
 const show = {
   display: "block",
-  color: "black"
+  color: "black",
+  marginLeft: 0
 };
+
+
+// function to get current window dimension (for conditional rendering of NavBar)
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -139,21 +143,23 @@ export function useWindowDimensions() {
 
 const NavBar = () => {
   const { height, width } = useWindowDimensions();
+  const logoFix = (height < 600) && (width > height);
+  console.log(logoFix);
   if (width <= 600) {
+    // toggle dropdown menu on click
     function handleClick() {
-      console.log(width);
-      console.log(document.getElementById("dropNav").style.display);
       if (document.getElementById("dropNav").style.display === "block") {
         document.getElementById("dropNav").style.display = "none";
       } else {
         document.getElementById("dropNav").style.display = "block";
       }
     };
+    // return dropdown navbar
     return(
       <Headroom calcHeightOnResize disableInlineStyles>
         <Nav>
           <StyledLink to="/" style={{maxWidth: "33%"}}>
-            <Logo src={logo} alt="ICSO Logo"/>
+            <Logo id="ICSO Logo" src={logo} alt="ICSO Logo" margin-top={logoFix ? "-0.25rem": "-0.5rem"}/>
           </StyledLink>
           <Dropdown>
             <DropdownB onClick={handleClick}>
@@ -174,11 +180,12 @@ const NavBar = () => {
       </Headroom>
     )
   }
+  // return normal navbar otherwise
   return (
     <Headroom calcHeightOnResize disableInlineStyles>
       <Nav style={{flex: 99}}>
         <StyledLink to="/" style={{maxWidth: "33%"}}>
-          <Logo src={logo} alt="ICSO Logo"/>
+          <Logo src={logo} alt="ICSO Logo" margin-top={logoFix ? "-0.25rem": "-0.5rem"}/>
         </StyledLink>
       </Nav>
       <Nav>

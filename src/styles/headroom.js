@@ -26,10 +26,12 @@ const headroom = css`
     position: relative;
     transform: translateY(0);
     transition: ${theme.transitions.headroom.transition};
+    max-height: 5rem;
   }
   .headroom--scrolled {
     transition: ${theme.transitions.headroom.transition};
     border-radius: 0 0 10px 10px;
+    max-height: 5rem;
   }
   .headroom--unpinned {
     position: fixed;
@@ -38,6 +40,7 @@ const headroom = css`
   }
   .headroom--pinned {
     position: fixed;
+    max-height: 5rem;
     transform: translateY(0);
     transition: ${theme.transitions.headroom.transition};
     background-color: ${theme.colors.white.light};

@@ -69,6 +69,7 @@ const BgStyle = {
 const Header = ({ children, title, date, cover }) => {
   const { height, width } = useWindowDimensions();
   if ((height < 600) && (width > height)) {
+    // don' return display title if the vertial space is too small
     return (
       <Wrapper style={{height: "5rem"}}>
         <Img fluid={cover || {} || [] || ''} style={BgStyle}/>

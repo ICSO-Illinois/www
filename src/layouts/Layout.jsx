@@ -10,8 +10,28 @@ import theme from '../../config/theme';
 import headroom from '../styles/headroom';
 import background from '../../static/logo/background.svg'
 
+const bgStyle = {
+  width: "70vw",
+  minWidth: "300px",
+  maxWidth: "600px",
+  margiLleft: "50%",
+  transform: "translateX(-50%)",
+};
+
+const bgDivStyle = {
+  position: "fixed",
+  top: "30vh",
+  left: "97%",
+  width: "0px",
+  overflow: "visible",
+  textAlign: "center",
+  zIndex: "-101"
+};
+
+
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
+    <div id="bg" style={bgDivStyle}><img src={background} style={bgStyle}/></div>
     <Fragment>
       <Global
         styles={css`
@@ -35,11 +55,6 @@ const Layout = ({ children }) => (
             /* height: 100%; */
             margin: 0;
             padding: 0;
-            background-image: url("${background}");
-            background-repeat: no-repeat;
-            background-size: auto 40vh;
-            background-position: bottom 30vh right -14vh;
-            background-attachment: fixed;
           }
 
           body {
