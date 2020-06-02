@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 
 const Wrapper = styled.header`
   background: ${props => props.theme.gradient.rightToLeft};
+  box-shadow: ${props => props.theme.shadow.header};
+  border-radius: 0 0 10px 10px;
   height: 30vh;
   max-height: 300px;
   @media (max-width: ${props => props.theme.breakpoints.m}) {
@@ -34,6 +36,20 @@ const Text = styled.div`
   padding: 0 2rem;
   margin-bottom: 3rem;
   align-items: center;
+  @media (max-width: ${props => props.theme.breakpoints.s}) {
+    margin-top: 1rem;
+  }
+  h1 {
+    @media (max-width: ${props => props.theme.breakpoints.s}) {
+      font-size: 1.5rem;
+    }
+  }
+  h3 {
+    @media (max-width: ${props => props.theme.breakpoints.s}) {
+      font-size: 1rem;
+      margin-top: -1.5rem;
+    }
+  }
 `;
 
 const Subtitle = styled.p`
@@ -54,7 +70,6 @@ const Header = ({ children, title, date, cover }) => (
     <Text>
       <h1>{title}</h1>
       <h3>{date}</h3>
-
       {children && <Subtitle>{children}</Subtitle>}
     </Text>
   </Wrapper>

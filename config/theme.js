@@ -25,6 +25,7 @@ export const shadow = {
   card: '0 20px 30px rgba(0, 0, 0, 0.1)',
   image: '0 15px 25px rgba(0, 0, 0, 0.1)',
   suggestion: '0 -5px 30px rgba(0,0,0,0.2)',
+  header: '5px 5px 26px rgba(0,0,0,0.5)',
   footer: '0 -3px 26px rgba(0,0,0,0.5)',
   feature: {
     big: {

@@ -7,12 +7,15 @@ import { Header, PostList } from '../components/';
 import { Layout } from '../layouts/';
 
 const PostWrapper = styled.div`
-  min-height: 50vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 4rem 4rem 1rem 4rem;
+  max-width: 1400px;
+  margin: 4rem auto 1rem auto;
+  @media (max-width: 1400px) {
+    margin: 4rem 4rem 1rem 4rem;
+  }
   @media (max-width: 1000px) {
     margin: 4rem 2rem 1rem 2rem;
   }
