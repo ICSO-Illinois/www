@@ -20,7 +20,7 @@ const bgStyle = {
 
 const bgDivStyle = {
   position: "fixed",
-  top: "30vh",
+  top: "30%",
   left: "97%",
   width: "0px",
   overflow: "visible",
@@ -79,6 +79,9 @@ const Layout = ({ children }) => (
             min-height: 100vh;
             position: relative;
             padding-bottom: 5em;
+            @media (max-width: ${theme.breakpoints.m}) {
+              padding-bottom: 15em;
+            }
           }
 
           ${headroom}
