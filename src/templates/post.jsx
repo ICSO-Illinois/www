@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
-import { Layout, Container, Content } from '../layouts/';
+import { Layout, Container, Content, TableOfContents } from '../layouts/';
 import { TagsBlock, Header, SEO } from '../components/';
 import '../styles/prism';
 
@@ -22,7 +22,7 @@ const PostSuggestion = styled.div`
 const Post = ({ data, pageContext }) => {
   const { next, prev } = pageContext;
   const { tableOfContents, html, frontmatter, excerpt } = data.markdownRemark;
-  const { date, title, tags, path, description } = frontmatter;
+  const { path, date, title, tags, description } = frontmatter;
   const image = frontmatter.cover.childImageSharp.fluid;
 
   return (
@@ -37,7 +37,7 @@ const Post = ({ data, pageContext }) => {
       <Header title={title} children={date} cover={image} />
       <Container>
         <h1>目录</h1>
-        <Content input={tableOfContents} />
+        <TableOfContents toc={tableOfContents}/>
         <h1>正文</h1>
         <Content input={html} />
         <TagsBlock list={tags || []} />
@@ -82,7 +82,12 @@ export const query = graphql`
         maxDepth: 3
         pathToSlugField: "frontmatter.path"
       )
+      headings {
+        value
+        depth
+      }
       frontmatter {
+        path
         date
         title
         tags
