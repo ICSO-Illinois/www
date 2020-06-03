@@ -34,7 +34,6 @@ const Index = ({ data }) => {
         {edges.map(({ node }) => {
           const { id, frontmatter } = node;
           const { published, cover, path, title, date, excerpt} = frontmatter;
-          console.log(published);
           return published ?
             <PostList
               key={id}
@@ -60,6 +59,7 @@ Index.propTypes = {
           node: PropTypes.shape({
             excerpt: PropTypes.string,
             frontmatter: PropTypes.shape({
+              published: PropTypes.bool.isRequired,
               cover: PropTypes.object.isRequired,
               path: PropTypes.string.isRequired,
               title: PropTypes.string.isRequired,

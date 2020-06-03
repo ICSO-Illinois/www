@@ -12,15 +12,16 @@ const Blog = ({ data }) => {
       <Helmet title={'文章列表'} />
       <Header title="文章列表">一切皆以服务华人为本</Header>
       {edges.map(({ node }) => (
-        <BlogList
-          key={node.id}
-          cover={node.frontmatter.cover.childImageSharp.fluid}
-          path={node.frontmatter.path}
-          title={node.frontmatter.title}
-          date={node.frontmatter.date}
-          tags={node.frontmatter.tags}
-          excerpt={node.frontmatter.excerpt}
-        />
+        node.frontmatter.published ?
+          <BlogList
+            key={node.id}
+            cover={node.frontmatter.cover.childImageSharp.fluid}
+            path={node.frontmatter.path}
+            title={node.frontmatter.title}
+            date={node.frontmatter.date}
+            tags={node.frontmatter.tags}
+            excerpt={node.frontmatter.excerpt}
+          /> : null
       ))}
     </Layout>
   );
@@ -36,6 +37,7 @@ Blog.propTypes = {
           node: PropTypes.shape({
             excerpt: PropTypes.string,
             frontmatter: PropTypes.shape({
+              published: PropTypes.bool.isRequired,
               cover: PropTypes.object.isRequired,
               path: PropTypes.string.isRequired,
               title: PropTypes.string.isRequired,
@@ -57,6 +59,7 @@ export const query = graphql`
           id
           excerpt(pruneLength: 200)
           frontmatter {
+            published
             title
             path
             tags
