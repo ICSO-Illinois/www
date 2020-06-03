@@ -23,6 +23,7 @@ const Layout = ({ children }) => (
             text-rendering: optimizeLegibility;
             overflow-x: hidden;
             box-sizing: border-box;
+            scroll-behavior: smooth;
             -ms-overflow-style: scrollbar;
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
             -webkit-font-smoothing: antialiased;

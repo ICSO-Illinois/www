@@ -1,9 +1,6 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
 import styled from '@emotion/styled';
 import prism from '../styles/prism';
-import { AnchorLink } from 'gatsby-plugin-anchor-links';
-import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const Toc = styled.div`
   ${prism};
@@ -61,23 +58,8 @@ const Toc = styled.div`
   }
 `;
 
-const TableOfContents = ({ headings, path }) => {
-  console.log(headings);
-  return (
-    <Toc>
-      <ul>
-        {headings.map((item, key) => (
-          <li key={key}>
-            <AnchorLink
-              to={`${path}/#${item.value.toLowerCase().replace(' ', '-')}`}
-              title={item.value}>
-              {item.value}
-            </AnchorLink>
-          </li>
-        ))}
-      </ul>
-    </Toc>
-  )
-};
+const TableOfContents = ({ toc }) => (
+  <Toc dangerouslySetInnerHTML={{ __html: toc }} />
+);
 
 export default TableOfContents;
