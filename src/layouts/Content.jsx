@@ -58,6 +58,9 @@ const Wrapper = styled.div`
         opacity: 0.8;
       }
     }
+    .anchor.before {
+      margin-top: 20vh;
+    }
   }
 `;
 
