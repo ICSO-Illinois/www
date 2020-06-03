@@ -7,6 +7,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
+    'gatsby-plugin-anchor-links',
     'gatsby-plugin-flow',
     {
       resolve: 'gatsby-plugin-react-leaflet',
@@ -38,6 +39,7 @@ module.exports = {
               },
             },
           },
+          'gatsby-remark-autolink-headers',
           'gatsby-remark-prismjs',
         ],
       },
