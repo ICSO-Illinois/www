@@ -87,23 +87,25 @@ const Title = styled.h1`
 `;
 
 const BlogList = ({ path, cover, title, date, excerpt, tags }) => (
-  <Container>
-    <Wrapper>
-      <Image>
-        <Link to={path} title={title}>
-          <Img fluid={cover} />
-        </Link>
-      </Image>
-      <Information>
-        <Date>{date}</Date>
-        <Link to={path}>
-          <Title>{title}</Title>
-        </Link>
-        <TagsBlock list={tags} />
-        {excerpt}
-      </Information>
-    </Wrapper>
-  </Container>
+  <div id="BlogList" style={{margin: "auto", display: "flex", justifyContent: "center"}}>
+    <Container>
+      <Wrapper>
+        <Image>
+          <Link to={path} title={title}>
+            <Img fluid={cover} />
+          </Link>
+        </Image>
+        <Information>
+          <Date>{date}</Date>
+          <Link to={path}>
+            <Title>{title}</Title>
+          </Link>
+          <TagsBlock list={tags} />
+          {excerpt}
+        </Information>
+      </Wrapper>
+    </Container>
+  </div>
 );
 
 export default BlogList;

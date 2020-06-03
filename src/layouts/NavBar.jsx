@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 import Headroom from 'react-headroom';
 import window from 'global';
+import theme from '../../config/theme';
 import logo from '../../static/logo/header-logo.svg';
 
 const StyledLink = styled(Link)`
@@ -142,10 +143,11 @@ export function useWindowDimensions() {
 }
 
 const NavBar = () => {
+  const widthSmall = parseInt(theme.breakpoints.s.replace('px',''));
   const { height, width } = useWindowDimensions();
-  const logoFix = (height < 600) && (width > height);
+  const logoFix = (height <= widthSmall) && (width > height);
   console.log(logoFix);
-  if (width <= 600) {
+  if (width <= widthSmall) {
     // toggle dropdown menu on click
     function handleClick() {
       if (document.getElementById("dropNav").style.display === "block") {

@@ -4,13 +4,12 @@ import PropTypes from 'prop-types';
 
 const Wrapper = styled.section`
   text-align: ${props => (props.center ? 'justify' : '')};
-  margin: auto;
+  /* margin: auto; */
   padding: 3rem 1.5rem;
   width: 75%;
   max-width: 1000px;
   max-width: ${props => props.theme.layout[props.type]};
   height: 100%;
-  flex: 1;
 
   @media (max-width: ${props => props.theme.breakpoints.m}) {
     width: 90%;
