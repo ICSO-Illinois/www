@@ -28,7 +28,7 @@ const Index = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
-      <Helmet title={'CU-ICSO'} />
+      <Helmet title={'CU-ICSO'} id={'helmet'} />
       <Header title={'CU-ICSO'}>欢迎来到CU-ICSO的主站</Header>
       <PostWrapper>
         {edges.map(({ node }) => {
