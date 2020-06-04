@@ -79,6 +79,11 @@ excerpt: 新生答疑会信息汇总
 	- 院系网址：[CEE Department Website](http://cee.illinois.edu/)
 	- Info Session 文档：[点击此处下载](../../info-session/eng/CEE.pdf)
 
+### 商院
+- 视频回放：
+- 院系网址：[Gies College of Business](https://giesbusiness.illinois.edu/)
+- Info Session 文档：[点击此处下载](../../info-session/Gies.pdf)
+
 ### 美院
 - 视频回放:
 - Info Session 文档：[点击此处下载](../../info-session/FAA.pdf)
