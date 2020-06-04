@@ -41,10 +41,6 @@ const Wrapper = styled.div`
   h4,
   h5,
   h6 {
-    padding-top: 20vh;
-    margin-top: -20vh;
-    display: inline-block;
-    position: relative;
     a {
       box-shadow: none;
       border-bottom: none;
@@ -58,8 +54,18 @@ const Wrapper = styled.div`
         opacity: 0.8;
       }
     }
-    .anchor.before {
-      margin-top: 20vh;
+    &::before {
+      display: block;
+      content: " ";
+      margin-top: -20vh;
+      height: 20vh;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    &:hover::before {
+      display: none;
+      /* height: 0;
+      margin: 0; */
     }
   }
 `;
