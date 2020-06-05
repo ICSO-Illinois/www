@@ -20,12 +20,11 @@ const MapWrapper = styled.div`
     @media (max-width: ${props => props.theme.breakpoints.s}) {
       width: 90vw;
     }
-  }
 `
 
 const Map = () => (
   <Layout>
-    <Helmet title={'ICSO 校园地图'}></Helmet>
+    <Helmet title={'ICSO 校园地图'}/>
     <Header title={'校园地图'} children={'看看校园里的地点吧'}/>
     <MapWrapper>
       <CampusMap lat={40.1091771} lng={-88.2270936} zoom={50}/>

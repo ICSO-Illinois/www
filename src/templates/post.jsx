@@ -2,8 +2,8 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
-import { Layout, Container, Content, TableOfContents } from '../layouts/';
-import { TagsBlock, Header, SEO } from '../components/';
+import { Layout, Container, Content } from '../layouts/';
+import { TagsBlock, Header, SEO, ScrollToTop } from '../components/';
 import '../styles/prism';
 import theme from '../../config/theme';
 import { useWindowDimensions } from '../layouts/NavBar.jsx';
@@ -63,7 +63,11 @@ const Post = ({ data, pageContext }) => {
           article
         />
         <Header title={title} children={date} cover={image} />
-        <div id="post" style={{margin: "auto", display: "flex", justifyContent: "center"}}>
+        <ScrollToTop path={path} isMobile={true} />
+        <div id="post" style={{margin: "auto",
+          display: "flex",
+          justifyContent: "center",
+          flexWrap: "nowrap"}}>
           <Container>
             <h1>目录</h1>
             <Content input={tableOfContents} />
@@ -115,7 +119,13 @@ const Post = ({ data, pageContext }) => {
         <Container>
           <Content input={html} />
         </Container>
-        <div id="empty" style={{flex: 1, maxWidth: "34rem"}}></div>
+        <div id="empty" style={{
+          flex: 1,
+          maxWidth: '34rem',
+          position: 'sticky',
+        }}>
+          <ScrollToTop path={path} isMobile={false}/>
+        </div>
       </FlexWrapper>
       <TagsBlock list={tags || []} />
       <SuggestionBar>
