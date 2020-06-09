@@ -54,7 +54,7 @@ const Wrapper = styled.div`
         opacity: 0.8;
       }
     }
-    &::before {
+    /* &::before {
       display: block;
       content: " ";
       margin-top: -20vh;
@@ -64,9 +64,9 @@ const Wrapper = styled.div`
     }
     &:hover::before {
       display: none;
-      /* height: 0;
-      margin: 0; */
-    }
+      height: 0;
+      margin: 0;
+    } */
   }
 `;
 
