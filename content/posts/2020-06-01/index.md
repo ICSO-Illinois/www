@@ -91,3 +91,7 @@ excerpt: 新生答疑会信息汇总
 ### 农院
 - 视频回放:
 - Info Session 文档：[点击此处下载](../../info-session/ACES.pdf)
+
+### 传媒学院
+- 视频回放:
+- Info Session 文档：[点击此处下载](../../info-session/CoM.pdf)
