@@ -59,7 +59,7 @@
     "react-helmet": "^5.2.1",
     "react-leaflet": "^2.7.0",
     "react-typography": "^0.16.19",
-    "sharp": "^0.25.2",
+    "sharp": "^0.30.5",
     "typeface-candal": "0.0.54",
     "typeface-open-sans": "0.0.54",
     "typography": "^0.16.19"
